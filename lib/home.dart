@@ -69,31 +69,3 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     );
   }
 }
-
-// class Preview extends StatelessWidget {
-//   const Preview({Key? key, required this.data}) : super(key: key);
-
-//   final String data;
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: const Text("Markdown Parse"),
-//       ),
-//       body: MarkdownParse(
-//         data: data,
-//         onTapHastag: (String name, String match) {
-//           // example : #hashtag
-//           // name => hashtag
-//           // match => #hashtag
-//         },
-//         onTapMention: (String name, String match) {
-//           // example : @mention
-//           // name => mention
-//           // match => #mention
-//         },
-//       ),
-//     );
-//   }
-// }
