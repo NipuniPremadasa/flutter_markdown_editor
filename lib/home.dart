@@ -46,24 +46,18 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       body: TabBarView(
         controller: _controller,
         children: [
-          Container(
-            child: MarkdownFormField(
-              controller: _textController,
-              enableToolBar: true,
-              emojiConvert: true,
-              autoCloseAfterSelectEmoji: false,
-              onChanged: (String text) {
-                setState(() {
-                  this.text = text;
-                });
-              },
-            ),
+          MarkdownFormField(
+            controller: _textController,
+            enableToolBar: true,
+            emojiConvert: true,
+            autoCloseAfterSelectEmoji: false,
+            onChanged: (String text) {
+              setState(() {
+                this.text = text;
+              });
+            },
           ),
-          Container(
-            child: MarkdownBody(data: text),
-          )
-
-          //Preview(data: _textController.text),
+          MarkdownBody(data: text)
         ],
       ),
     );
