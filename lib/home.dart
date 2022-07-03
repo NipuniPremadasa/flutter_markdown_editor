@@ -59,7 +59,10 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             },
           ),
           //preview tab
-          MarkdownBody(data: text)
+          Container(
+            margin: const EdgeInsets.all(10.0),
+            child: MarkdownBody(data: text),
+          )
         ],
       ),
     );
