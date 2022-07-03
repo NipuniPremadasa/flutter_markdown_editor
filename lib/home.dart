@@ -46,6 +46,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       body: TabBarView(
         controller: _controller,
         children: [
+          //editor tab
           MarkdownFormField(
             controller: _textController,
             enableToolBar: true,
@@ -57,6 +58,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               });
             },
           ),
+          //preview tab
           MarkdownBody(data: text)
         ],
       ),
